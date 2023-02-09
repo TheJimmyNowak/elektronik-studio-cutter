@@ -1,0 +1,7 @@
+filmy/*
+converted/*
+venv/*
+.idea/
+*.vob
+*.VOB
+test/*
