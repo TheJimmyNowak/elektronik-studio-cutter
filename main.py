@@ -4,7 +4,7 @@ import os
 input_dir = "filmy"
 output_dir = "converted"
 subpart_duration = 5
-number_of_parts = 2
+number_of_subparts = 2
 
 # Create the output directory if it doesn't exist
 if not os.path.exists(output_dir):
@@ -20,7 +20,7 @@ for root, dirs, files in os.walk(input_dir):
             if not os.path.exists(subpart_output):
                 os.makedirs(subpart_output)
 
-            for i in range(number_of_parts):
+            for i in range(number_of_subparts):
                 # Get the duration of the video
                 duration = clip.duration
 
